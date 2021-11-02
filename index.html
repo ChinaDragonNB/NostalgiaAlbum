@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>相册 - AK47007</title>
+    <meta http-equiv="imagetoolbar" content="no">
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="https://www.ak47007.com/favicon.ico">
+    <script type="text/javascript" src="index.js">
+    </script>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="command">
+            <h1>怀旧相册</h1>
+            翻出了家里的老相册.
+            <div id="bar"></div>
+        </div>
+        <div id="urlInfo"></div>
+    </div>
+    <script type="text/javascript">
+        /* ==== start script ==== */
+        let srcs = []
+        let url = "https://007-static.oss-cn-beijing.aliyuncs.com/blog-album/"
+        for (var i = 1; i <= 17; i++) {
+            let obj = {
+                src: url + "img%20(" + i + ").jpg"
+            }
+            srcs.push(obj);
+        }
+        setTimeout(function() {
+            m3D.init([{
+                    src: url + "img-1.jpg"
+                }, {
+                    src: url + "img-2.jpg"
+                }, {
+                    src: url + "img-3.jpg"
+                }, {
+                    src: url + "img-4.jpg"
+                }, {
+                    src: url + "img-5.jpg"
+                }, {
+                    src: url + "img-6.jpg"
+                }, {
+                    src: url + "img-7.jpg"
+                }, {
+                    src: url + "img-8.jpg"
+                }, {
+                    src: url + "img-9.jpg"
+                }, {
+                    src: url + "img-10.jpg"
+                }, {
+                    src: url + "img-11.jpg"
+                }, {
+                    src: url + "img-12.jpg"
+                }, {
+                    src: url + "img-13.jpg"
+                }, {
+                    src: url + "img-14.jpg"
+                }, {
+                    src: url + "img-15.jpg"
+                }, {
+                    src: url + "img-16.jpg"
+                }])
+                // m3D.init([{
+                //     src: url + "img%20(1).jpg"
+                // }, {
+                //     src: url + "img%20(2).jpg"
+                // }, {
+                //     src: url + "img%20(3).jpg"
+                // }, {
+                //     src: url + "img%20(4).jpg"
+                // }, {
+                //     src: url + "img%20(5).jpg"
+                // }, {
+                //     src: url + "img%20(6).jpg"
+                // }, {
+                //     src: url + "img%20(7).jpg"
+                // }, {
+                //     src: url + "img%20(8).jpg"
+                // }, {
+                //     src: url + "img%20(9).jpg"
+                // }, {
+                //     src: url + "img%20(10).jpg"
+                // }, {
+                //     src: url + "img%20(11).jpg"
+                // }, {
+                //     src: url + "img%20(12).jpg"
+                // }, {
+                //     src: url + "img%20(13).jpg"
+                // }, {
+                //     src: url + "img%20(14).jpg"
+                // }, {
+                //     src: url + "img%20(15).jpg"
+                // }, {
+                //     src: url + "img%20(16).jpg"
+                // }, {
+                //     src: url + "img%20(17).jpg"
+                // }]);
+        }, 500);
+    </script>
+</body>
+
+</html>
